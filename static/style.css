@@ -1,0 +1,120 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  /* box-sizing:border-box; */
+}
+body{
+  background-color: darkcyan;
+  height: 100vh;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+
+@keyframes typing {
+  from { 
+      width: 0% 
+  }
+  to { 
+      width: 100% 
+  }
+}
+
+@keyframes blink {
+  from, to { 
+      border-color: transparent 
+  }
+  50% { 
+      border-color: orange; 
+  }
+}
+.welcome{
+    margin:auto;
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif; 
+    color:azure; 
+    font-size: 40px;
+    font-weight: bold;
+    text-align:center; 
+    padding: 24px;
+  }
+.userinput{
+     padding-top: 5px;
+     width: 100%;
+     margin-top: 10px;
+     margin-left: 10px;
+     font-family: 'Times New Roman', Times, serif; 
+     font-style: normal;
+     font-weight: bold;
+     text-align:center; 
+     font-family: 'Times New Roman', Times, serif;
+     border-collapse: collapse; 
+     
+   }
+.output{
+    padding-top: 1px;
+    width: 100%;
+    margin:auto;
+    font-family: 'Times New Roman', Times, serif; 
+    font-style: normal;
+    font-weight: bold;
+    text-align:center; 
+    font-family: 'Times New Roman', Times, serif;
+    border-collapse: collapse; 
+    
+  }
+   .input-text{
+     
+     font-size: 20px;
+     border: none;
+     
+   }
+   .button{
+     margin-top: 20px;
+     margin-bottom: 20px;
+     font-size: 22px;
+     border-radius: 10px;
+     font-family: 'Times New Roman', Times, serif;
+     padding: 12px;
+     border: none;
+     color:black;
+     font-weight: bold;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     cursor: pointer;
+    
+   }
+
+   .tab-pane{
+     font-size: 20px;
+     margin-left: 45%;
+   }
+   .button:hover {
+    background-color: rgb(45, 192, 241);
+    color:white;
+  }
+
+  .button1:hover {
+    background-color: rgb(45, 192, 241);
+    color:white;
+  }
+  
+  
+   .button1{
+     margin-top: 20px;
+     margin-bottom: 20px;
+     font-size: 20px;
+     border-radius: 5px;
+     font-family: 'Times New Roman', Times, serif;
+     padding: 12px;
+     border: none;
+     color:black;
+     font-weight: bold;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     cursor: pointer;
+     margin-left: 44%;
+   }

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Summary output</title>
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+</head>
+<body style=" background-color: darkcyan;">
+
+	<div class="welcome">
+        <h3 style="color:white;" >Summary</h3>
+	</div> 
+    <div class="output">
+        <h2 style="color:white; font-size: 30px;">Summary for the text provided</h2>
+        <br><br>
+
+
+                           
+            <div class="input" style="padding-left: 250px; padding-right: 250px;text-align:center; font-family: 'Times New Roman', Times, serif;font-style: normal;font-size: 20px;font-weight: bold;">
+                <p>{{ summary }}</p>
+                
+            </div>
+                    
+        
+    </div>
+    <h3 style="margin-top: 25px;color:white;margin-bottom: 10px; margin-left: 43%; font-size: 30px;">Named Entities</h3>
+    <div class="tab-pane" id="2a" >
+        
+        <ol>
+         {% for item in custom_namedentities %}
+        <li>{{item[0]}}  -->  {{item[1]}}</li>
+        {% endfor %}
+        </ol>
+    </div>
+
+    <h3 style="color:white;margin-bottom: 10px;margin-top: 25px;margin-left: 43%; font-size: 30px;">Verbs</h3>
+    <div class="tab-pane">
+        
+
+    <ul>
+         {% for item in verb %}
+        <li><span class="badge badge-success">{{item}}</span></li>
+        {% endfor %}
+    </ul>
+    </div>
+
+    <h3 style="color:white;margin-bottom: 10px;margin-top: 25px;margin-left: 43%; font-size: 30px;">Noun</h3>
+    <div class="tab-pane">
+        
+        <ul>
+         {% for item in noun %}
+        <li><span class="badge badge-success">{{item}}</span></li>
+        {% endfor %}
+        </ul>
+    </div>
+
+    <br><br><br>
+                
+    <p><a href=home ><button class=button1 style="width: 90px;" >Back</button></a></p>
+
+
+</body>
+</html>
